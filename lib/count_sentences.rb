@@ -28,6 +28,8 @@ class String
   end
 
   def count_sentences
-
+    count = 0
+    if self.include? ("!")
+      binding.pry
   end
 end
