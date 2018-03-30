@@ -28,10 +28,7 @@ class String
   end
 
   def count_sentences
-    count = []
-    if self.include? ("!" || "." || "?")
-      count = self.split("!" || "." || "?")
-    end
-    count.size
+    count = = self.split(/_|\.\s|\?\s|\!\s/)
+    sentence_array.length
   end
 end
