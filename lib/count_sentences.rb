@@ -28,7 +28,7 @@ class String
   end
 
   def count_sentences
-    count = self.split(/_|\.\s|\?\s|\!\s/)
-    sentence_array.length
+    x = self.split(' ')
+    x.count {|element| element.end_with?('.', '?', '!')}
   end
 end
