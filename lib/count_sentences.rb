@@ -28,8 +28,10 @@ class String
   end
 
   def count_sentences
-    count = 0
-    if self.include? ("!")
-      binding.pry
+    count = []
+    if self.include? ("!" || "." || "?")
+      count = self.split("!" || "." || "?")
+    end
+
   end
 end
