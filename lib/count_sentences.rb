@@ -32,6 +32,6 @@ class String
     if self.include? ("!" || "." || "?")
       count = self.split("!" || "." || "?")
     end
-
+    count.size
   end
 end
